@@ -32,9 +32,6 @@ jobs:
 
       - name: Build
         run: dotnet build --no-restore
-
+      
       - name: Test
         run: dotnet test --no-build --verbosity normal
-
-      - name: Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@master
